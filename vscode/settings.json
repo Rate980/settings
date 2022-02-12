@@ -1,0 +1,46 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.editor.untitled.hint": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontFamily": "Ricty Diminished",
+    "editor.formatOnSave": true,
+    "vim.useSystemClipboard": true,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "python.envFile": "${workspaceFolder}/.venv",
+    "workbench.startupEditor": "none",
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length",
+        "100"
+    ],
+    "python.formatting.autopep8Args": [
+        "--max-line-length=100"
+    ],
+    "python.linting.flake8Path": "C:\\Users\\xv0nn\\AppData\\Roaming\\Python\\Python310\\Scripts\\flake8",
+    "dart.debugExternalPackageLibraries": false,
+    "dart.debugSdkLibraries": false,
+    "explorer.confirmDelete": false,
+    "emulator.emulatorPathWindows": "C:\\Users\\xv0nn\\AppData\\Local\\Android\\Sdk\\emulator",
+    "explorer.confirmDragAndDrop": false,
+    "python.formatting.provider": "autopep8",
+    "oneDarkPro.italic": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "python.linting.mypyPath": "C:\\Users\\xv0nn\\AppData\\Roaming\\Python\\Python310\\Scripts\\mypy.exe",
+    "python.linting.mypyEnabled": true,
+    "editor.tabCompletion": "on",
+    "editor.bracketPairColorization.enabled": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    }
+}
