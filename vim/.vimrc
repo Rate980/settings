@@ -67,7 +67,8 @@ let g:lightline = {
 " install dir {{{
 inoremap <silent> jj <ESC>
 set noshowmode
-let s:dein_dir = expand('~/.cache/dein')
+echo a
+let s:dein_dir = expand('$HOME/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 " }}}
 
@@ -85,14 +86,21 @@ if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
 
   " .toml file
-  let s:rc_dir = expand('~/.vim')
+  let s:rc_dir = expand('$HOME/.vim')
   if !isdirectory(s:rc_dir)
     call mkdir(s:rc_dir, 'p')
   endif
   let s:toml = s:rc_dir . '/dein.toml'
+  let s:lazy_toml = s:rc_dir . '/dein_lazy.toml'
 
   " read toml and cache
-  call dein#load_toml(s:toml, {'lazy': 0})
+  if isdirectory(s:toml)
+    call dein#load_toml(s:toml, {'lazy': 0})
+  endif
+
+  if isdirectory(s:lazy_toml)
+    call dein#load_state(s:lazy_toml, {'lazy': 0})
+  endif
 
   " end settings
   call dein#end()
