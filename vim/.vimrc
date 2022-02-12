@@ -67,7 +67,6 @@ let g:lightline = {
 " install dir {{{
 inoremap <silent> jj <ESC>
 set noshowmode
-echo a
 let s:dein_dir = expand('$HOME/.cache/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 " }}}
