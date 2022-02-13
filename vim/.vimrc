@@ -22,7 +22,7 @@ set number
 " シンタックスハイライトの有効化
 syntax enable
 " 現在の行を強調表示
-set cursorline
+"set cursorline
 " インデントはスマートインデント
 set smartindent
 
@@ -93,11 +93,11 @@ if dein#load_state(s:dein_dir)
   let s:lazy_toml = s:rc_dir . '/dein_lazy.toml'
 
   " read toml and cache
-  if isdirectory(s:toml)
+  if filereadable(s:toml)
     call dein#load_toml(s:toml, {'lazy': 0})
   endif
 
-  if isdirectory(s:lazy_toml)
+  if filereadable(s:lazy_toml)
     call dein#load_state(s:lazy_toml, {'lazy': 0})
   endif
 
