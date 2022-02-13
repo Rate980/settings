@@ -23,7 +23,6 @@ function OnViModeChange {
     }
     [Microsoft.PowerShell.PSConsoleReadLine]::InvokePrompt()
 }
-[Microsoft.PowerShell.PSConsoleReadLine]::InvokePrompt()
 Set-PSReadLineOption -ViModeIndicator Script -ViModeChangeHandler $Function:OnViModeChange
 # vi insertmode keymap
 Set-PSReadLineKeyHandler -ViMode Insert -key "j,j" -Function ViCommandMode 
