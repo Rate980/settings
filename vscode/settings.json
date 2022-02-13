@@ -54,5 +54,6 @@
             ]
         }
     ],
-    "vim.hlsearch": true
+    "vim.hlsearch": true,
+    "git.confirmSync": false
 }
