@@ -6,6 +6,10 @@ Set-PSReadlineKeyHandler -Key ctrl+d -Function DeleteCharOrExit
 Set-PSReadLineOption -EditMode Vi
 # prompt vi
 Copy-Item -Path function:prompt -Destination function:_OLD_VIRTUAL_PROMPT
+Function global:prompt {
+    Write-Host -NoNewLine -Separator "" "`e[48;2;105;176;255m`e[30m INSERT `e[0m"
+    _OLD_VIRTUAL_PROMPT
+}
 function OnViModeChange {
     if ($args[0] -eq 'Command') {
         # Set the cursor to a blinking block.
