@@ -54,6 +54,10 @@ set-PSReadLineKeyHandler -Key j -ViMode Insert -ScriptBlock {
     }
 }
 
+# vi command keymap
+Set-PSReadLineKeyHandler -ViMode Command -Chord G -Function EndOfHistory
+Set-PSReadLineKeyHandler -ViMode Command -Key "g,g" -Function BeginningOfHistory
+Set-PSReadLineKeyHandler -ViMode Command -Chord "Z,Z" -Function DeleteCharOrExit
 # bash風のtab補完
 Set-PSReadLineKeyHandler -Key Tab -Function Complete
 
