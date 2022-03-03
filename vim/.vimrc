@@ -59,6 +59,15 @@ set smartindent
 set laststatus=2
 set wildmenu
 set background=dark
+" カーソル設定
+if has('vim_starting')
+  let &t_SI .= "\e[5 q"
+  let &t_EI .= "\e[6 q"  
+  let &t_SR .= "\e[3 q"
+  let &t_te .= "\e[0 q"
+  let &t_ti .= "\e[6 q"
+endif
+
 " dein.vim settings {{{
 
 let g:lightline = {
