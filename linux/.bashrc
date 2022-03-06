@@ -130,6 +130,7 @@ case "$TERM" in
         export TERM="xterm-256color"
 esac
 alias emacs=vim
+alias nano=vim
 alias tarx='tar xf'
 alias clr=clear
 set -o vi
