@@ -67,6 +67,9 @@ if has('vim_starting')
   let &t_te .= "\e[0 q"
   let &t_ti .= "\e[6 q"
 endif
+"nomal mode keymap
+map Zq ZQ
+map Zz ZZ
 
 " dein.vim settings {{{
 
